@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/kennethv93/spiref",
     packages=setuptools.find_packages(),
-    package_data={'spiref': ['GLI-2012.xlsx', 'NHANES_III.xlsx']},
+    package_data={'spiref': ['GLI-2012.xlsx']},
     install_requires=['openpyxl', 'math', 'os', 'numpy'],
     classifiers=[
         "Programming Language :: Python :: 3",
