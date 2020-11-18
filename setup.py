@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/kennethv93/spiref",
     packages=setuptools.find_packages(),
     package_data={'spiref': ['GLI-2012.xlsx']},
-    install_requires=['openpyxl', 'math', 'os', 'numpy'],
+    install_requires=['openpyxl', 'numpy'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
