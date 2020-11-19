@@ -23,7 +23,7 @@ class GLIReferenceValueCalculator:
 
     def __init__(self):
         # Load the Excel file with the coefficients and the msplines
-        dir =  os.path.dirname(os.path.realpath(__file__))
+        dir = os.path.dirname(os.path.realpath(__file__))
         self.wb = load_workbook(dir+'/GLI-2012.xlsx')
 
         # All the lung parameters for which the reference values can be calculated

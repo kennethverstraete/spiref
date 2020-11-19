@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="spiref",
-    version="1.0.3",
+    version="1.0.4",
     author="Kenneth Verstraete",
     author_email="verstraetekenneth@gmail.com",
-    description="This package contains the reference value calculator for spirometry",
+    description="This package contains the reference value calculator for spirometry.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kennethv93/spiref",

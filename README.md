@@ -1,5 +1,8 @@
-# Reference Value Calculator
-This package contains the reference value calculator for spirometry. Install the packages from the requirements file in order for the calculator to work. The Excel files are used for computing the reference values.
+# Spiref: Spirometry Reference Value Calculator
+This package contains the reference value calculator for spirometry. Can be installed immediately using pip:
+````
+pip install spiref
+````
 
 Currently supported:
 * NHANES III
@@ -27,12 +30,10 @@ Race options for GLI-2012: 'Cau', 'AfrAm', 'NEAsia', 'SEAsia', 'other' (Caucasia
 ## Usage
 For NHANES III:
 ```python
-import sys
-sys.path.insert(0, 'NHANESIII')
-from NHANESIII.nhanes3 import NHANESReferenceValueCalculator
+from spiref import nhanes3
 
 # Load the calculator
-rvc = NHANESReferenceValueCalculator()
+rvc = nhanes3.NHANESReferenceValueCalculator()
 
 # Use the calculator to compute FEV1 for a male of height 174cm, age 28 of the African-American race.
 fev1 = rvc.calculate_fev1('male', 174, 28, race='AfrAm')
@@ -40,12 +41,10 @@ fev1 = rvc.calculate_fev1('male', 174, 28, race='AfrAm')
 
 For GLI12:
 ```python
-import sys
-sys.path.insert(0, 'GLI12')
-from GLI12.gli12 import GLIReferenceValueCalculator
+from spiref import gli12
 
 # Load the calculator
-rvc = GLIReferenceValueCalculator()
+rvc = gli12.GLIReferenceValueCalculator()
 
 # The general calculator function:
 fev1 = rvc.cal_lung_param('FEV1', 'male', 174, 28, 'AfrAm')  # African-American male, height 174 cm, age 28
